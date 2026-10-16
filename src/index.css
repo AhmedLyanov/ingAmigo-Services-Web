@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+:root {
+  --primary-bg: #ffffff;
+  --neutral-1000: #f3f3f3;
+  --neutral-700: #D1D5DB;
+  --neutral-300: #323232;
+
+  --footer-bg: #F5F5F5;
+}
+
+@layer base {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+}
+
