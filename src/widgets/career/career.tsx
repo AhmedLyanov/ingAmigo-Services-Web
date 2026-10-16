@@ -1,5 +1,6 @@
 
 import { Typography } from "@ingamigo/design";
+import HandShake from "@/shared/assets/images/career.png"
 
 export interface CareerProps {
   title?: string;
@@ -15,7 +16,7 @@ export const Career = ({
       <div className="mx-auto flex max-w-5xl flex-col items-center justify-between gap-12 md:flex-row md:gap-16">
         <div className="flex w-full flex-1 items-center justify-center">
           <img
-            src="/src/shared/assets/images/career.png"
+            src={HandShake}
             alt="Рукопожатие и деловой портфель"
             className="h-auto w-full max-w-md object-contain"
           />
