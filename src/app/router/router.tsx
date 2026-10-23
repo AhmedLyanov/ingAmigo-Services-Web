@@ -10,6 +10,9 @@ const HomePage = lazy(() => import("@/pages/home/home"));
 const AboutPage = lazy(() => import("@/pages/about/about-us"));
 const NotFoundPage = lazy(() => import("@/pages/not-found/not-found"));
 const HowItWorks = lazy(() => import("@/pages/how-it-works/how-it-works"));
+const BecomeASpecialist = lazy(
+  () => import("@/pages/become-a-specialist/become-a-specialist"),
+);
 
 export function AppRouter() {
   return (
@@ -28,6 +31,10 @@ export function AppRouter() {
               <Route path={ROUTE_PATHS.ABOUT} element={<AboutPage />} />
               <Route path={ROUTE_PATHS.NOT_FOUND} element={<NotFoundPage />} />
               <Route path={ROUTE_PATHS.HOW_IT_WORKS} element={<HowItWorks />} />
+              <Route
+                path={ROUTE_PATHS.BECOME_A_SPECIALIST}
+                element={<BecomeASpecialist />}
+              />
             </Route>
           </Routes>
         </Suspense>

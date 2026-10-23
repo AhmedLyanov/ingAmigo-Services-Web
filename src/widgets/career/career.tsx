@@ -1,6 +1,7 @@
 
 import { Typography } from "@ingamigo/design";
-import HandShake from "@/shared/assets/images/career.png"
+import { Link } from "react-router";
+import HandShake from "@/shared/assets/images/career.png";
 
 export interface CareerProps {
   title?: string;
@@ -34,6 +35,14 @@ export const Career = ({
           >
             {description}
           </Typography>
+          <Link
+            to="/become-a-specialist"
+            className="inline-flex items-center rounded-full border border-(--border-default) px-5 py-2.5 transition-opacity hover:opacity-70"
+          >
+            <Typography as="span" variant="bodySm" weight="medium">
+              Подробнее о работе специалистом
+            </Typography>
+          </Link>
         </header>
       </div>
     </section>
